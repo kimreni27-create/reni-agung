@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="id"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Two Islands, One Love – Reni ♡ Agung</title>
+<style>
+:root{--bg:#fff6ef;--card:#fffdf9;--ink:#5a3e3b;--rose:#d98a97;--pink:#f7d3d9;--brown:#a7806b;--sh:0 6px 18px rgba(167,128,107,.2);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#2d2124;--card:#3a2a2e;--ink:#f6e3e0;--rose:#e8a0ad;--pink:#5a3a42;--brown:#d2ab98}}
+html{scroll-behavior:smooth}*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.7 system-ui,-apple-system,Segoe UI,sans-serif;overflow-x:hidden}
+h1,h2,.serif{font-family:Georgia,"Times New Roman",serif;font-weight:600}
+h2{text-align:center;font-size:1.6rem;margin:0 0 20px;color:var(--rose)}
+section{max-width:760px;margin:0 auto;padding:48px 18px}
+.card{background:var(--card);border-radius:14px;box-shadow:var(--sh);padding:18px;margin:14px 0}
+p{margin:0 0 12px;white-space:pre-line}
+#cover{position:fixed;inset:0;z-index:50;background:linear-gradient(160deg,var(--pink),var(--bg));display:flex;align-items:center;justify-content:center;text-align:center;padding:24px;transition:transform 1s,opacity 1s}
+#cover.open{transform:perspective(900px) rotateY(-70deg) translateX(-60%);opacity:0;pointer-events:none}
+#cover .book{max-width:420px;border:3px double var(--rose);border-radius:8px 20px 20px 8px;padding:34px 22px;background:var(--card);box-shadow:var(--sh)}
+.btn{background:var(--rose);color:#fff;border:0;border-radius:99px;padding:12px 24px;font-size:1rem;cursor:pointer;box-shadow:var(--sh)}
+.fl{position:fixed;inset:0;pointer-events:none;z-index:1;overflow:hidden}
+.fl span{position:absolute;bottom:-30px;opacity:.5;animation:up linear infinite}
+@keyframes up{to{transform:translateY(-110vh) rotate(40deg)}}
+.tl{border-left:3px dashed var(--rose);margin-left:10px;padding-left:18px}
+.tl b{color:var(--rose)}
+.flip{perspective:700px;height:120px;cursor:pointer}
+.flip>div{position:relative;width:100%;height:100%;transition:transform .6s;transform-style:preserve-3d}
+.flip.on>div{transform:rotateY(180deg)}
+.flip i,.flip em{position:absolute;inset:0;backface-visibility:hidden;display:flex;align-items:center;justify-content:center;text-align:center;padding:10px;font-style:normal;border-radius:12px;font-size:.92rem;line-height:1.4}
+.flip i{background:#fff3b8;color:#5a3e3b;box-shadow:var(--sh)}.flip em{background:var(--pink);transform:rotateY(180deg)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px}
+.cal{display:grid;grid-template-columns:repeat(7,1fr);gap:4px;text-align:center;font-size:.85rem}
+.cal div{background:var(--card);border-radius:8px;padding:6px 0}.cal .h{background:var(--pink)}
+.pol{background:#fff;color:#5a3e3b;padding:8px 8px 30px;box-shadow:var(--sh);transform:rotate(-2deg)}
+.pol:nth-child(even){transform:rotate(2deg)}
+.pol div{aspect-ratio:4/5;background:var(--pink);display:flex;align-items:center;justify-content:center;overflow:hidden}.pol img{width:100%;height:100%;object-fit:cover}
+.count{font-size:2.6rem;text-align:center;color:var(--rose)}
+#env{cursor:pointer;text-align:center}
+.letter{max-height:0;overflow:hidden;transition:max-height 1.2s;padding-top:0;padding-bottom:0}.letter.on{max-height:3000px;padding:18px}
+.bl label{display:block;padding:6px 0}.bl input{accent-color:var(--rose);margin-right:8px;transform:scale(1.3)}
+.big{font-size:2rem;text-align:center;color:var(--rose);margin:24px 0 4px}
+#top{position:fixed;right:14px;bottom:calc(14px + env(safe-area-inset-bottom,0px));z-index:20;width:44px;height:44px;border-radius:50%;border:0;background:var(--rose);color:#fff;font-size:1.2rem;cursor:pointer}
+.rv{opacity:0;transform:translateY(20px);transition:.8s}.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.fl{display:none}*{transition:none!important}}
+</style></head><body>
+<div class="fl" id="fl"></div>
+<div id="cover"><div class="book">
+<p class="serif" style="font-size:1.4rem;color:var(--rose)">Mas Agung, klik open di bawah ya 💌</p>
+<button class="btn" id="openBtn">Open</button></div></div>
+
+<section class="rv"><h2>Awalnya Cuma “Hallo”, Kok Bisa Sayang Sih? 🙈</h2>
+<div class="tl"><p><b>27 Agustus 2026</b><br>Kenalan lewat TikTok, awalnya cuma bilang “hallo” doang 😳</p><p><b>10 Oktober 2026</b><br>Resmi jadian dong! 🥹</p></div>
+<p class="serif" style="text-align:center;color:var(--rose)">Siapa sangka ya, dari satu kata “hallo” doang bisa bikin dua orang beda pulau sampai sejauh ini ✨</p></section>
+
+<section class="rv"><h2>Jauh di Mata, Dekat di Hati 🥹</h2>
+<svg viewBox="0 0 400 200" style="width:100%"><rect width="400" height="200" rx="14" fill="var(--pink)"/><ellipse cx="90" cy="150" rx="70" ry="22" fill="var(--card)"/><ellipse cx="310" cy="60" rx="60" ry="30" fill="var(--card)"/>
+<path id="pth" d="M95 140 Q200 -10 305 55" fill="none" stroke="var(--rose)" stroke-width="2.5" stroke-dasharray="6 6"/>
+<text x="95" y="146" text-anchor="middle" font-size="22">♡</text><text x="310" y="62" text-anchor="middle" font-size="22">♡</text>
+<text x="90" y="182" text-anchor="middle" font-size="13" fill="var(--ink)">Reni · Bekasi, Jawa Barat</text><text x="310" y="104" text-anchor="middle" font-size="13" fill="var(--ink)">Agung · Jambi, Sumatera</text>
+<text font-size="20">✉️<animateMotion dur="4s" repeatCount="indefinite"><mpath href="#pth"/></animateMotion></text></svg>
+<div class="card"><p>Sekarang kita emang masih dipisahin jarak. Ada pulau, perjalanan, sama waktu yang belum bisa bikin kita ketemu. Tapi semoga jarak ini cuma jadi bagian dari cerita, bukan alasan buat berhenti saling memperjuangkan ya 🥺</p><p class="serif" style="text-align:center;color:var(--rose)">Dua pulau, dua orang, satu cerita yang lagi kita usahain ✨</p></div></section>
+
+<section class="rv"><h2>30 Hari Jadi Kita 🗓️</h2>
+<div class="count" id="cnt">♡</div><p style="text-align:center"><b>Udah 1 bulan kita jadian, loh! 🎉</b></p>
+<div class="cal" id="cal"></div>
+<div class="card"><p>Emang belum banyak hal yang bisa kita lakuin bareng secara langsung. Belum ada foto berdua, belum jalan-jalan bareng, ketemu aja belum pernah. Tapi satu bulan ini tetep punya banyak cerita yang berarti buat aku 🥹</p></div></section>
+
+<section class="rv"><h2>Hal-Hal Kecil yang Bikin Aku Suka Mas Agung 💗</h2>
+<p style="text-align:center;font-size:.85rem">Ketuk kartunya buat dibalik ya ♡</p><div class="grid" id="likes"></div>
+<p class="serif" style="text-align:center;font-size:1.2rem;color:var(--rose);margin-top:22px">Mas Agung itu menggemaskan dan lucu, bikin aku pengen peluk deh 🥺</p></section>
+
+<section class="rv">
+<div class="card"><b>Kalimat yang selalu aku inget</b><p>Mas Agung pernah bilang pengen ke Pulau Jawa tahun depan buat jalan-jalan sekaligus ketemu aku.</p><p>Entah nanti beneran kejadian atau nggak, aku masih penasaran banget gimana rasanya ketemu Mas Agung untuk pertama kalinya 🥹</p></div></section>
+
+<section class="rv"><h2>Suatu Hari Nanti, Aku Mau Kita... 🌷</h2>
+<div class="card bl" id="bl"></div></section>
+
+<section class="rv"><h2>Surat Kecil untuk Kamu, Mas Agung 💌</h2>
+<div class="card" id="env"><div style="font-size:3rem">💌</div>Ketuk amplopnya buat dibuka</div>
+<div class="letter card" id="let"><p>Untuk Mas Agung Sayang,
+
+Terima kasih sudah hadir dan menjadi bagian dari hari-hari aku.
+
+Mungkin hubungan kita belum seperti pasangan lain yang bisa bertemu kapan saja, jalan bersama, atau menghabiskan waktu secara langsung. Kita masih harus puas dengan chat, telepon, sleep call, kirim pap, dan hal-hal kecil dari kejauhan.
+
+Jujur, kadang aku masih sulit percaya kalau kita bisa sampai di titik ini. Ada rasa takut, khawatir, dan pikiran macam-macam. aku takut kalau ternyata semua ini tidak seserius yang dibayangkan, takut kalau ada hal yang disembunyikan, dan takut kalau cerita kita tidak berakhir bahagia.
+
+Tapi aku ingin kita sama-sama berusaha. Semoga komunikasi kita tetap baik, kita bisa saling jujur, saling percaya, dan tidak mudah menyerah hanya karena jarak atau kesalahpahaman.
+
+Maaf kalau aku terkadang suka membingungkan, susah ditebak, atau tidak jelas saat menyampaikan sesuatu. Maklum, namanya juga perempuan, wkwkw.
+
+aku juga ingin Mas Agung tahu bahwa kalau suatu saat Mas Agung punya masalah atau membutuhkan sesuatu, jangan ragu untuk cerita. aku akan berusaha membantu sebisa mungkin.
+
+Dan satu hal lagi, Mas Agung...
+
+Tolong diusahakan ya, supaya cerita kita punya happy ending. Wkwkwk.
+
+Bukan sekadar tetap bersama untuk sementara waktu, tapi benar-benar bisa sampai ke pernikahan, hidup bersama, dan saling menemani sampai maut memisahkan.
+
+aku sayang Mas Agung.
+
+Semoga semua doa baik yang sedang kita simpan bisa menemukan jalannya.
+
+Dari,
+Reni ♡</p></div></section>
+
+<section class="rv" style="text-align:center"><h2>Happy 1st Month Anniversary, Mas Agung Sayang ♡</h2>
+<p>Makasih ya udah jadi bagian dari cerita aku selama satu bulan ini.
+Dari satu kata “hallo”, sampai akhirnya jadi dua orang yang saling sayang 🥹</p>
+<button class="btn" id="secBtn">Klik buat pesan rahasia ♡</button>
+<div class="letter card" id="sec" style="text-align:left;margin-top:16px"><p>Mas Agung Sayang,
+
+Terima kasih sudah hadir dalam hidup aku. Terima kasih untuk setiap perhatian, waktu, cerita, tawa, dan hal-hal kecil yang mungkin Mas Agung anggap biasa, tetapi berarti buat aku.
+
+aku bersyukur bisa mengenal Mas Agung. Semoga Mas Agung selalu diberi kesehatan, kebahagiaan, kelancaran dalam setiap urusan, dan selalu dilindungi dalam setiap langkah.
+
+Semoga apa pun yang sedang kita perjuangkan sekarang bisa berakhir dengan sesuatu yang indah. Semoga kita selalu diberi kesabaran untuk menghadapi jarak, kejujuran untuk menjaga kepercayaan, dan keberanian untuk terus memilih satu sama lain.
+
+aku tidak tahu bagaimana perjalanan kita ke depannya. Tapi aku berharap, suatu hari nanti kita tidak lagi hanya saling melihat dari layar. Semoga ada hari ketika aku bisa benar-benar memeluk Mas Agung, menggenggam tangannya, dan menghabiskan waktu bersama tanpa harus menghitung jarak.
+
+aku sayang Mas Agung.
+
+Semoga kita bisa happy ending, bukan hanya dalam cerita, tetapi benar-benar dalam kehidupan.
+
+Sampai nanti, ketika jarak sudah tidak lagi menjadi penghalang.
+
+With love,
+Reni ♡</p></div>
+<div class="big serif">I LOVE YOU, MAS AGUNG.</div><small>10.10.2026 - Our Beginning.</small></section>
+<button id="mus" style="display:none;position:fixed;left:14px;bottom:calc(14px + env(safe-area-inset-bottom,0px));z-index:20;width:44px;height:44px;border-radius:50%;border:0;background:var(--rose);color:#fff;font-size:1.1rem;cursor:pointer" aria-label="Putar atau jeda musik">♫</button>
+<button id="top" aria-label="Kembali ke atas">↑</button>
+<script>
+// ===== PENGATURAN: foto/screenshot =====
+var AUDIO_SRC=""; // isi dengan file musik milikmu
+var au;
+var CAPTIONS=[]; // keterangan polaroid, diisi nanti
+// =======================================
+var $=function(i){return document.getElementById(i)};
+var LIKES=["Aku suka banget liat foto Mas Agung pas senyum 🥰","Aku suka logat sama cara ngomongnya Mas Agung, gemes!","Aku suka pas Mas Agung manggil aku “Sayang” 🙈","Aku suka pas Mas Agung ngajak ngobrol waktu sleep call","Aku suka balesan Mas Agung yang cepet banget ⚡","Aku suka pas Mas Agung muji dan antusias nanggepin ceritaku","Aku suka usaha Mas Agung pas ngirim makanan atau paket 🥹","Aku suka pas Mas Agung ngucapin selamat pagi ☀️","Aku suka pas Mas Agung ngawalin telepon pake “Assalamualaikum”","Aku suka pas Mas Agung nunjukin sayang pake emoji hati 💗"];
+$("likes").innerHTML=LIKES.map(function(t,i){return '<div class="flip"><div><i>Suka #'+(i+1)+' ♡</i><em>'+t+'</em></div></div>'}).join("");
+document.querySelectorAll(".flip").forEach(function(f){f.onclick=function(){f.classList.toggle("on")}});
+var BL=["Bertemu untuk pertama kalinya.","Berpelukan.","Ngobrol langsung tanpa dibatasi layar.","Jalan-jalan bareng.","Mengambil foto berdua.","Membuat lebih banyak kenangan bersama.","Saling menemani dan menua bersama.","Menjadi suami istri 💍"],sv={};
+try{sv=JSON.parse(localStorage.getItem("bl")||"{}")}catch(e){}
+$("bl").innerHTML=BL.map(function(t,i){return '<label><input type="checkbox" data-i="'+i+'"'+(sv[i]?" checked":"")+'>'+t+'</label>'}).join("");
+$("bl").onchange=function(e){sv[e.target.dataset.i]=e.target.checked;try{localStorage.setItem("bl",JSON.stringify(sv))}catch(x){}};
+var st=new Date(2026,9,10),now=new Date(),d=Math.floor((new Date(now.getFullYear(),now.getMonth(),now.getDate())-st)/864e5);
+$("cnt").textContent="Hari ke-"+Math.max(d+1,1)+" ♡";
+var c="Min Sen Sel Rab Kam Jum Sab".split(" ").map(function(x){return '<div class="h">'+x+'</div>'}).join("");
+for(var k=0;k<st.getDay();k++)c+="<div></div>";
+for(var k=0;k<=31;k++){var dt=new Date(2026,9,10+k),e=k==0||k==31;c+="<div"+(e?' style="background:var(--pink)"':"")+">"+dt.getDate()+(e?"<br>♡":"")+"</div>"}
+$("cal").innerHTML=c;
+$("env").onclick=function(){$("let").classList.add("on");this.style.display="none"};
+$("secBtn").onclick=function(){$("sec").classList.add("on");this.style.display="none";for(var i=0;i<14;i++)heart()};
+$("top").onclick=function(){window.scrollTo({top:0,behavior:"smooth"})};
+$("mus").onclick=function(){if(au){if(au.paused)au.play();else au.pause()}};
+$("openBtn").onclick=function(){if(AUDIO_SRC){try{au=new Audio(AUDIO_SRC);au.loop=true;au.play();$("mus").style.display="block"}catch(e){}}$("cover").classList.add("open");setTimeout(function(){$("cover").style.display="none"},1000)};
+function heart(){var s=document.createElement("span");s.textContent=["♡","✿","★"][Math.random()*3|0];s.style.left=Math.random()*100+"%";s.style.color="var(--rose)";s.style.fontSize=10+Math.random()*16+"px";s.style.animationDuration=9+Math.random()*9+"s";$("fl").appendChild(s);setTimeout(function(){s.remove()},19000)}
+for(var i=0;i<8;i++)setTimeout(heart,i*900);setInterval(heart,2500);
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)e.target.classList.add("in")})},{threshold:.08});
+document.querySelectorAll(".rv").forEach(function(e){io.observe(e)});
+</script></body></html>
